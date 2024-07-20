@@ -305,3 +305,10 @@ $(function() {
 $(function() {
 	$('.bg3').wrapInner('<div>');
 });
+
+function openEventPage(eventId) {
+    // イベントページへのリンクを設定
+    window.location.href = `event.html?id=${eventId}`;
+}
+
+
