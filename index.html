@@ -1,357 +1,305 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>ヨネミリーー米沢のイベント・おすすめを配信中</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="米沢の魅力を知ろう！！">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="images/komekome.png" type="image/png">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>ヨネミリーー米沢のイベント・おすすめを配信中</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="米沢の魅力を知ろう！！">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="images/komekome.png" type="image/png">
+		<!-- FullCalendar CSS -->
+		<link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css' rel='stylesheet' />
+	</head>
 
-<body class="home">
+	<body class="home">
 
-<header>
+		<header>
 
-<div id="header-top">
-<h1>ヨネミリーー米沢でのイベントの日時や場所を発信！！米沢でたくさんの思い出をつくりましょう！！</h1>
-<ul class="lang">
-<li><a href="#">English</a></li>
-<li><a href="#">Chinese</a></li>
-</ul>
-</div>
+			<div id="header-top">
+				<p id="logo"><a href="index.html"><img src="images/yonemiri.png" alt="ヨネミリ"></a></p>
+				<h1>ヨネミリーー米沢でのイベントの日時や場所を発信！！米沢でたくさんの思い出をつくりましょう！！</h1>
+				<ul class="lang">
+					<li><a href="#">English</a></li>
+					<li><a href="#">Chinese</a></li>
+				</ul>
+			</div>
 
-<div class="header-inner">
+			<div class="header-inner">
+				<!-- 開閉ブロック -->
+				<div id="menubar">
 
-<p id="logo"><a href="index.html"><img src="images/yonemiri.png" alt="ヨネミリ"></a></p>
+					<nav>
+						<ul>
+							<li><a href="index.html">ホーム<span>Home</span></a></li>
+							<li><a href="destinations.html">観光地<span>Destinations</span></a></li>
+							<li><a href="activities.html">アクティビティ<span>Activities</span></a></li>
+							<li><a href="events.html">イベント<span>Events</span></a></li>
+							<li><a href="faq.html">質問<span>Faq</span></a></li>
+						</ul>
+					</nav>
 
-<!--開閉ブロック-->
-<div id="menubar">
+				</div>
 
-<nav>
-<ul>
-<li><a href="index.html">ホーム<span>Home</span></a></li>
-<li><a href="destinations.html">観光地<span>Destinations</span></a></li>
-<li><a href="activities.html">アクティビティ<span>Activities</span></a></li>
-<li><a href="events.html">イベント<span>Events</span></a></li>
-<li><a href="faq.html">質問<span>Faq</span></a></li>
-</ul>
-</nav>
+				<!--/#menubar-->
+			</div>
 
-</div>
-<!--/#menubar-->
+		</header>
 
-</div>
+	</body>
 
-</header>
+</html>
+
 
 <!--スライドショー-->
 <aside id="mainimg">
 
-<div class="slide slide1">
-<div>
-<h2>米沢の魅力を見つける<span>Discover stunning Yonezawa</span></h2>
-<p>様々なイベントに参加して、米沢をもっと知ろう！<br>
-楽しいこと盛りだくさん！！</p>
-</div>
-</div>
+	<div class="slide slide1">
+		<div>
+			<h2>米沢の魅力を見つける<span>Discover stunning Yonezawa</span></h2>
+			<p>様々なイベントに参加して、米沢をもっと知ろう！<br>
+			楽しいこと盛りだくさん！！</p>
+		</div>
+	</div>
 	
-<div class="slide slide2">
-<div>
-<h2>忘れられない思い出にしよう<span>Unforgettable memories await</span></h2>
-<p>ここでしかない出会いと新たな体験<br>
-誰かの記憶に残る一日になるかも</p>
-</div>
-</div>
+	<div class="slide slide2">
+		<div>
+			<h2>忘れられない思い出にしよう<span>Unforgettable memories await</span></h2>
+			<p>ここでしかない出会いと新たな体験<br>
+			誰かの記憶に残る一日になるかも</p>
+		</div>
+	</div>
 
-<div class="slide slide3">
-<div>
-<h2>その日のイベントを楽しむ<span>enjoy the today events</span></h2>
-<p>たくさんの楽しいイベントを見つける<br>
-米沢市のイベントがまとまっている</p>
-</div>
-</div
-	
-<div id="loading-text">loading...</div>
-
+	<div class="slide slide3">
+		<div>
+			<h2>その日のイベントを楽しむ<span>enjoy the today's events</span></h2>
+			<p>たくさんの楽しいイベントを見つける<br>
+				米沢市のイベントがまとまっている</p>
+		</div>
+	</div>
+	<div id="loading-text">loading...</div>	
 </aside>
+
+<!-- カレンダーセクション -->
+<section id="calendar-section">
+	<div id="calendar-container">
+		<h2>イベントカレンダー</h2>
+		<div id="calendar"></div>
+	</div>
+</section>
+
+<!-- イベントリストセクション -->
+<section id="event-list-section">
+	<div id="event-list-container">
+		<h2>イベント情報</h2>
+		<div class="event-item">
+			<img src="images/event1.jpg" alt="イベント1">
+			<h3>イベント名1</h3>
+			<p>イベントの説明がここに入ります。</p>
+			<a href="#">詳細を見る</a>
+		</div>
+		<div class="event-item">
+			<img src="images/event2.jpg" alt="イベント2">
+			<h3>イベント名2</h3>
+			<p>イベントの説明がここに入ります。</p>
+			<a href="#">詳細を見る</a>
+		</div>
+		<div class="event-item">
+			<img src="images/event3.jpg" alt="イベント3">
+			<h3>イベント名3</h3>
+			<p>イベントの説明がここに入ります。</p>
+			<a href="#">詳細を見る</a>
+		</div>
+	</div>
+</section>
 
 <div id="container">
 
-<div id="contents" class="bg1">
+	<div id="contents" class="bg1">
 
-<main class="column">
+		<main>
+			<section>
 
-<div class="main-contents">
-
-<section>
-
-<h2>おすすめの観光地</h2>
-
-<div class="list-grid1">
-
-<div class="list blur">
-<figure><img src="images/mv13.jpg" alt=""></figure>
-<div class="text">
-<h4>観光地タイトル1</h4>
-<p>観光地の簡単な説明を入れます。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
-</div>
-<p class="btn"><a href="destinations.html#link1">詳しくみる</a></p>
-</div>
-
-<div class="list blur">
-<figure><img src="images/sakura.jpg" alt=""></figure>
-<div class="text">
-<h4>観光地タイトル2</h4>
-<p>観光地の簡単な説明を入れます。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
-</div>
-<p class="btn"><a href="destinations.html#link2">詳しくみる</a></p>
-</div>
-
-<div class="list blur">
-<figure><img src="images/yamagata_univ.jpg" alt=""></figure>
-<div class="text">
-<h4>観光地タイトル3</h4>
-<p>観光地の簡単な説明を入れます。サンプルテキスト。サンプルテキスト。サンプルテキスト。<br>
-観光地の簡単な説明を入れます。</p>
-</div>
-<p class="btn"><a href="destinations.html#link3">詳しくみる</a></p>
-</div>
-
-</div>
-<!--/.list-grid1-->
-
-</section>
-
-<section>
-
-<h2>今月のイベント</h2>
-<nav>
-<ul class="submenu">
-<li><a href="index.html">ホーム</a></li>
-<li><a href="destinations.html">観光地</a>
-	<ul>
-	<li><a href="destinations.html#link1">観光地メニュー1</a></li>
-	<li><a href="destinations.html#link2">観光地メニュー2</a></li>
-	<li><a href="destinations.html#link3">観光地メニュー3</a></li>
-	</ul>
-</li>
-</ul>
-</nav>
+				<h2 class="dn">ギャラリー</h2>
+	
+					<div class="thumbnail-slide">
+						<a href="#"><img src="images/mv13.jpg" alt=""></a>
+						<a href="#"><img src="images/sakura.jpg" alt=""></a>
+						<a href="#"><img src="images/yamagata_univ.jpg" alt=""></a>
+						<a href="#"><img src="images/mv13.jpg" alt=""></a>
+						<a href="#"><img src="images/sakura.jpg" alt=""></a>
+						<a href="#"><img src="images/yamagata_univ.jpg" alt=""></a>
+					</div>
+	
+			</section>
 
 
+				<section>
 
-</section>
+					<h2><span class="small">お知らせ<span class="small">What's New</span></span></h2>
+	
+					<dl class="new">
+						<dt>2024.08.01</dt>
+						<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+		
+						<dt>2024.08.01</dt>
+						<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+		
+						<dt>2024.08.01</dt>
+						<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+		
+						<dt>2024.08.01</dt>
+						<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+		
+						<dt>2024.08.01</dt>
+						<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
 
-</div>
-<!--/.main-contents-->
+					</dl>
 
-<div class="sub-contents">
+				</section>
 
-<h3>Site Menu</h3>
+			
+			<!--/.main-contents-->
 
-<nav>
-<ul class="submenu">
-<li><a href="index.html">ホーム</a></li>
-<li><a href="destinations.html">観光地</a>
-	<ul>
-	<li><a href="destinations.html#link1">観光地メニュー1</a></li>
-	<li><a href="destinations.html#link2">観光地メニュー2</a></li>
-	<li><a href="destinations.html#link3">観光地メニュー3</a></li>
-	</ul>
-</li>
-<li><a href="activities.html">アクティビティ</a>
-	<ul>
-	<li><a href="activities_item.html">アクティビティ詳細</a></li>
-	<li><a href="activities_item.html">アクティビティ詳細</a></li>
-	<li><a href="activities_item.html">アクティビティ詳細</a></li>
-	</ul>
-</li>
-<li><a href="events.html">イベント</a></li>
-<li class="current"><a href="faq.html">よく頂く質問</a></li>
-</ul>
-</nav>
+		</main>
 
-</div>
-<!--/.sub-contents-->
 
-<!--画面右半分で回転する大きな円形のテキストアニメーション-->
-<img src="images/bg_text1.svg" alt="" class="animation-text spin">
+		<div class="bg3">
 
-</main>
 
-<main class="column">
+			<main class="column">
 
-<div class="main-contents"></div>
-<!--/.main-contents-->
+				<div class="main-contents">
 
-<div class="sub-contents">
+					<h2 class="l">bg3背景を使いたい場合は</h2>
 
-<h3>１つ目のsub-contents</h3>
+					<p>１カラムの時のように単純にsectionにclassを指定してまうと、左のメニューに背景画像がおよばないので、main-contentsの外側に１つdivタグを追加し、そこにbg3を追加して下さい。</p>
 
-<nav>
-<ul class="submenu">
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-</ul>
-</nav>
+					<p><span class="look">
+					<span class="color-check">&lt;div class=&quot;bg3&quot;&gt;</span><br>
+					&lt;main class=&quot;column&quot;&gt;<br>
+					〜〜<br>
+					&lt;/div&gt;<br>
+					<span class="color-check">&lt;/div&gt;</span></span></p>
 
-</div>
-<!--/.sub-contents-->
+				</div>
+				<!--/.main-contents-->
 
-<div class="sub-contents">
+				<div class="sub-contents">
 
-<h3>２つ目のsub-contents</h3>
+					<h3>Site Menu</h3>
 
-<nav>
-<ul class="submenu">
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-</ul>
-</nav>
+					<nav>
+						<ul class="submenu">
+							<li><a href="#">メニュー</a></li>
+							<li><a href="#">メニュー</a></li>
+							<li><a href="#">メニュー</a></li>
+							<li><a href="#">メニュー</a></li>
+							<li><a href="#">メニュー</a></li>
+						</ul>
+					</nav>
 
-</div>
-<!--/.sub-contents-->
+				</div>
+				<!--/.sub-contents-->
 
-</main>
+			</main>
 
-<div class="bg3">
+		</div>
+		<!--/.bg3-->
 
-<main class="column">
-
-<div class="main-contents">
-
-<h2 class="l">bg3背景を使いたい場合は</h2>
-
-<p>１カラムの時のように単純にsectionにclassを指定してまうと、左のメニューに背景画像がおよばないので、main-contentsの外側に１つdivタグを追加し、そこにbg3を追加して下さい。</p>
-
-<p><span class="look">
-<span class="color-check">&lt;div class=&quot;bg3&quot;&gt;</span><br>
-&lt;main class=&quot;column&quot;&gt;<br>
-〜〜<br>
-&lt;/div&gt;<br>
-<span class="color-check">&lt;/div&gt;</span></span></p>
-
-</div>
-<!--/.main-contents-->
-
-<div class="sub-contents">
-
-<h3>Site Menu</h3>
-
-<nav>
-<ul class="submenu">
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-<li><a href="#">メニュー</a></li>
-</ul>
-</nav>
-
-</div>
-<!--/.sub-contents-->
-
-</main>
-
-</div>
-<!--/.bg3-->
-
-</div>
-<!--/#contents-->
-
+	</div>
+	<!--/#contents-->
+	
 </div>
 <!--/#container-->
 
 <section>
 
-<h2 class="dn">ギャラリー</h2>
+	<h2 class="dn">ギャラリー</h2>
 
-<div class="thumbnail-slide">
-<a href="#"><img src="images/1.jpg" alt=""></a>
-<a href="#"><img src="images/2.jpg" alt=""></a>
-<a href="#"><img src="images/3.jpg" alt=""></a>
-<a href="#"><img src="images/1.jpg" alt=""></a>
-<a href="#"><img src="images/2.jpg" alt=""></a>
-<a href="#"><img src="images/3.jpg" alt=""></a>
-</div>
+	<div class="thumbnail-slide">
+		<a href="#"><img src="images/mv13.jpg" alt=""></a>
+		<a href="#"><img src="images/sakura.jpg" alt=""></a>
+		<a href="#"><img src="images/yamagata_univ.jpg" alt=""></a>
+		<a href="#"><img src="images/mv13.jpg" alt=""></a>
+		<a href="#"><img src="images/sakura.jpg" alt=""></a>
+		<a href="#"><img src="images/yamagata_univ.jpg" alt=""></a>
+	</div>
 
 </section>
 
 <div id="footer-contents">
 
-<div class="left">
+	<div class="left">
 
-<h3>Travel Logo</h3>
-<p>〒000-0000 東京足立区XXXXXX1丁目1号<br>
-代表電話：000-0000-0000<br>
-受付時間：月曜日から金曜日の8時から18時まで</p>
+		<h3>Travel Logo</h3>
+		<p>〒000-0000 東京足立区XXXXXX1丁目1号<br>
+		代表電話：000-0000-0000<br>
+		受付時間：月曜日から金曜日の8時から18時まで</p>
 
-<ul class="icons">
-<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-<li><a href="#"><i class="fab fa-line"></i></a></li>
-<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-<li><a href="https://www.instagram.com/odekake___.event/"><i class="fab fa-instagram"></i></a></li>
-</ul>
+		<ul class="icons">
+			<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+			<li><a href="#"><i class="fab fa-line"></i></a></li>
+			<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+			<li><a href="https://www.instagram.com/odekake___.event/"><i class="fab fa-instagram"></i></a></li>
+		</ul>
 
-<p class="btn"><a href="contact.html">問い合わせ</a></p>
-<p class="btn"><a href="contact.html">資料請求</a></p>
+		<p class="btn"><a href="contact.html">問い合わせ</a></p>
+		<p class="btn"><a href="contact.html">資料請求</a></p>
 
-</div>
-<!--/.left-->
+	</div>
+	<!--/.left-->
 
-<div class="right">
+	<div class="right">
 
-<h3>アクセス</h3>
-<p><a href="https://template-party.com/file/pickup_googlemap.html">GoogleMapの地図を変更する方法はマニュアルをご覧下さい。</a></p>
-<div class="iframe-box">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
+	<h3>アクセス</h3>
+		<p><a href="https://template-party.com/file/pickup_googlemap.html">GoogleMapの地図を変更する方法はマニュアルをご覧下さい。</a></p>
+<		<div class="iframe-box">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 	
-</div>
-<!--/.right-->
+	</div>
+	<!--/.right-->
 
 </div>
 <!--/#footer-contents-->
 
 <div id="footermenu">
-<ul>
-<li class="title">メニュー見出し</li>
-<li><a href="#">サンプルメニューサンプルメニュー</a></li>
-<li><a href="#">サンプルメニュー</a></li>
-<li><a href="#">サンプルメニュー</a></li>
-<li><a href="#">サンプルメニュー</a></li>
-</ul>
-<ul>
-<li class="title">メニュー見出し</li>
-<li><a href="#">サンプルメニューサンプルメニュー</a></li>
-<li><a href="#">サンプルメニュー</a></li>
-<li><a href="#">サンプルメニュー</a></li>
-<li><a href="#">サンプルメニュー</a></li>
-</ul>
-<ul>
-<li class="title">メニュー見出し</li>
-<li><a href="#">サンプルメニューサンプルメニュー</a></li>
-<li><a href="#">サンプルメニュー</a></li>
-<li><a href="#">サンプルメニュー</a></li>
-</ul>
-<ul>
-<li class="title">メニュー見出し</li>
-<li><a href="#">サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a></li>
-<li><a href="#">サンプルメニュー</a></li>
-</ul>
+	<ul>
+		<li class="title"><a href="index.html">ホーム<span>Home</span></a></li>
+		<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+	</ul>
+	<ul>
+		<li class="title"><a href="destinations.html">観光地<span>Destinations</span></a></li>
+		<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+	</ul>
+	<ul>
+		<li class="title"><a href="activities.html">アクティビティ<span>Activities</span></a></li>
+		<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+	</ul>
+	<ul>
+		<li class="title"><a href="events.html">イベント<span>Events</span></a></li>
+		<li><a href="#">サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+	</ul>
+	<ul>
+		<li class="title"><a href="faq.html">質問<span>Faq</span></a></li>
+		<li><a href="#">サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a></li>
+		<li><a href="#">サンプルメニュー</a></li>
+	</ul>
 </div>
 <!--/#footermenu-->
 
 <footer>
-<small>Copyright&copy; <a href="index.html">Travel Logo</a> All Rights Reserved.</small>
-<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+	<small>Copyright&copy; <a href="index.html">山形大学クラウド・ソフトウエア開発会＆米沢女子短期大学</a> All Rights Reserved.</small>
+	<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 </footer>
 
 <!--ページの上部へ戻るボタン-->
@@ -359,9 +307,9 @@
 
 <!--開閉ボタン（ハンバーガーアイコン）-->
 <div id="menubar_hdr">
-<div class="menu-icon">
-<span></span><span></span><span></span>
-</div>
+	<div class="menu-icon">
+		<span></span><span></span><span></span>
+	</div>
 </div>
 
 <!--jQueryの読み込み-->
@@ -377,6 +325,10 @@
 
 <!--このテンプレート専用のスクリプト-->
 <script src="js/main.js"></script>
+
+<!--カレンダー用-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/locales/ja.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
 
 </body>
 </html>
