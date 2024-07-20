@@ -60,12 +60,19 @@
 
 /*２枚目画像*/
 .slide2 {
-	background: url('../images/sakura.jpg') no-repeat center center / cover;	/*２枚目の背景画像の読み込み*/
+	background: url('../images/yakei2.jpg') no-repeat center center / cover;	/*２枚目の背景画像の読み込み*/
 }
 
 /*３枚目画像*/
 .slide3 {
-	background: url('../images/yamagata_univ.jpg') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
+	background: url('../images/niku.jpg') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
+	justify-content: flex-end;	/*テキストブロックを右側に*/
+	text-align: right;			/*テキストを右寄せ*/
+}
+
+/*4枚目画像*/
+.slide4 {
+	background: url('../images/mamenoki.jpg') no-repeat center center / cover;	/*4枚目の背景画像の読み込み*/
 	justify-content: flex-end;	/*テキストブロックを右側に*/
 	text-align: right;			/*テキストを右寄せ*/
 }
