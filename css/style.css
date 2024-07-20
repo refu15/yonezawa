@@ -82,7 +82,7 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	-webkit-text-size-adjust: none;
-	background: #f2f1f3 url('../images/haikei1.jpg') repeat center top / 150px;	/*背景色、背景壁紙の読み込み。壁紙の幅を150pxに指定してリピート。*/
+	background: #f2f1f3  repeat center top / 150px;	/*背景色、背景壁紙の読み込み。壁紙の幅を150pxに指定してリピート。*/
 	color: #333;		/*文字色*/
 	line-height: 2;		/*行間*/
 	animation: opa1 0.2s 0.5s both;	/*0.5秒待機後、0.2秒かけてフェードイン表示*/
@@ -177,7 +177,7 @@ a:hover {
 /*bg1背景
 ---------------------------------------------------------------------------*/
 .bg1 {
-	background: url('../images/bg1.png') no-repeat center top / 100%;	/*画像の読み込み、リピートせず、左右中央に配置、上部に配置で幅100%で配置*/
+	background: url('../images/niku.jpg') no-repeat center top / 100%;	/*画像の読み込み、リピートせず、左右中央に配置、上部に配置で幅100%で配置*/
 }
 
 
@@ -187,6 +187,11 @@ a:hover {
 	background:	url('../images/bg2.png') no-repeat left top / 100%;	/*画像の読み込み、リピートせず、左に配置、上部に配置で幅100%で配置*/
 }
 
+/*bg3背景
+---------------------------------------------------------------------------*/
+.bg3 {
+	background:	url('../images/aozora.jpg') no-repeat center top / 100%;	/*画像の読み込み、リピートせず、左に配置、上部に配置で幅100%で配置*/
+}
 
 /*container
 ---------------------------------------------------------------------------*/
