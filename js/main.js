@@ -311,41 +311,5 @@ function openEventPage(eventId) {
     window.location.href = `event.html?id=${eventId}`;
 }
 
-//===============================================================
-// calendar用
-//===============================================================
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        locale: 'ja',
-        events: [
-            {
-                title: 'イベント1',
-                start: '2024-07-22',
-                url: 'event1.html'
-            },
-            {
-                title: 'イベント2',
-                start: '2024-07-23',
-                url: 'event2.html'
-            },
-            {
-                title: 'イベント3',
-                start: '2024-07-24',
-                url: 'event3.html'
-            }
-        ],
-        eventClick: function(info) {
-            info.jsEvent.preventDefault(); // don't let the browser navigate
-
-            if (info.event.url) {
-                window.location.href = info.event.url;
-            }
-        }
-    });
-
-    calendar.render();
-});
 
