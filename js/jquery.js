@@ -32,3 +32,4 @@ $('.blur').on('inview', function() {
 /*$('.fade').on('inview', function() {
 	$(this).addClass('fade-in');
 });*/
+
