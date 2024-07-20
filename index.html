@@ -8,7 +8,6 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="images/komekome.png" type="image/png">
 		<!-- FullCalendar CSS -->
-		<link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css' rel='stylesheet' />
 	</head>
 
 	<body class="home">
@@ -91,10 +90,7 @@
 
 <!-- カレンダーセクション -->
 <section id="calendar-section">
-        <div id="calendar-container">
-            <h2>イベントカレンダー</h2>
-            <div id="calendar"></div>
-        </div>
+       <iframe src="https://calendar.google.com/calendar/embed?src=3bf52c2ea6da853940121050f26abf722185db1ce9b48a3434c91d5a30dd82c0%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </section>
 
 <!-- イベントリストセクション -->
@@ -180,16 +176,12 @@
 
 				<div class="main-contents">
 
-					<h2 class="l">bg3背景を使いたい場合は</h2>
+					<h2 class="l">今月のおすすめ</h2>
 
-					<p>１カラムの時のように単純にsectionにclassを指定してまうと、左のメニューに背景画像がおよばないので、main-contentsの外側に１つdivタグを追加し、そこにbg3を追加して下さい。</p>
+					<p>今月は山形大学の中央広場がおすすめです。天気がいい日は日向ぼっこにちょうどいいです！！<br>
+					天気がよすぎるとほぼ日サロです。</p>
 
-					<p><span class="look">
-					<span class="color-check">&lt;div class=&quot;bg3&quot;&gt;</span><br>
-					&lt;main class=&quot;column&quot;&gt;<br>
-					〜〜<br>
-					&lt;/div&gt;<br>
-					<span class="color-check">&lt;/div&gt;</span></span></p>
+					
 
 				</div>
 				<!--/.main-contents-->
@@ -328,10 +320,6 @@
 
 <!--このテンプレート専用のスクリプト-->
 <script src="js/main.js"></script>
-
-<!--カレンダー用-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/locales/ja.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
 
 </body>
 </html>
