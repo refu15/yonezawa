@@ -117,49 +117,76 @@ section + section {
 
 
 /* カレンダーセクション */
-#calendar {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #e0f7fa; /* 薄い水色 */
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.icon-legend {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.icon-legend ul {
-    list-style: none;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
 }
 
-.icon-legend li {
-    display: inline-block;
-    margin: 0 10px;
+.calendar-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.calendar {
+    background-color: #E0F7FA;
+    border: 1px solid #B2EBF2;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.calendar-header {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    background-color: #ffffff;
+    border: 1px solid #B2EBF2;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.day-number {
+    font-size: 1.2em;
+}
+
+.event-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.icons-info {
+    margin-top: 20px;
+}
+
+.icon-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    border-radius: 50%;
+    font-size: 1.5em;
+    margin-right: 10px;
 }
 
-.event1-icon {
-    background-color: #ff9999; /* 赤 */
+.description {
+    font-size: 1em;
 }
 
-.event2-icon {
-    background-color: #99ff99; /* 緑 */
-}
-
-.event3-icon {
-    background-color: #9999ff; /* 青 */
-}
 
 /* イベントリストセクション */
 #event-list-section {
