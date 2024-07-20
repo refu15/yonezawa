@@ -117,7 +117,7 @@ section + section {
 
 /* イベントリストセクション */
 #event-list-section {
-    background: url('../images/event-bg.jpg') no-repeat center center;
+    background: url('../images/shine.jpg') no-repeat center center;
     background-size: cover;
     padding: 20px;
 }
