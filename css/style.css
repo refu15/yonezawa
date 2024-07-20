@@ -1112,7 +1112,7 @@ ul.icons {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background-image: url('images/iro.jpg'); /* ここで背景画像を設定 */
+    background-image: url('../images/iro.jpg'); /* ここで背景画像を設定 */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
