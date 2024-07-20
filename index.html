@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="images/komekome.png" type="image/png">
 		<!-- FullCalendar CSS -->
+		<link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css' rel='stylesheet' />
 	</head>
 
 	<body class="home">
@@ -89,9 +90,23 @@
 </aside>
 
 <!-- カレンダーセクション -->
-<section>
-       <iframe src="https://calendar.google.com/calendar/embed?src=3bf52c2ea6da853940121050f26abf722185db1ce9b48a3434c91d5a30dd82c0%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-</section>
+<section id="calendar-section">
+        <div id="calendar-container">
+            <h2>イベントカレンダー</h2>
+            <div id="calendar"></div>
+        </div>
+    </section>
+
+    <section id="description-section">
+        <h2>アイコンの説明</h2>
+        <ul>
+            <li><span class="icon" style="background-color: orange;"></span> ナセBA</li>
+            <li><span class="icon" style="background-color: red;"></span> コミセン</li>
+            <li><span class="icon" style="background-color: green;"></span> 市内中央</li>
+            <li><span class="icon" style="background-color: blue;"></span> 上杉神社周辺</li>
+            <li><span class="icon" style="background-color: purple;"></span> 小野川温泉周辺</li>
+        </ul>
+    </section>
 
 <!-- イベントリストセクション -->
 <section id="event-list-section">
@@ -320,6 +335,9 @@
 
 <!--このテンプレート専用のスクリプト-->
 <script src="js/main.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js'></script>
+<script src="js/calendar.js"></script>
 
 </body>
 </html>
