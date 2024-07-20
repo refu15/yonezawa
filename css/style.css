@@ -184,13 +184,13 @@ a:hover {
 /*bg2背景
 ---------------------------------------------------------------------------*/
 .bg2 {
-	background:	url('../images/nizi.png') no-repeat left top / 100%;	/*画像の読み込み、リピートせず、左に配置、上部に配置で幅100%で配置*/
+	background:	url('../images/sima.png') no-repeat left top / 100%;	/*画像の読み込み、リピートせず、左に配置、上部に配置で幅100%で配置*/
 }
 
 /*bg3背景
 ---------------------------------------------------------------------------*/
 .bg3 {
-	background:	url('../images/aozora.jpg') no-repeat center top / 100%;	/*画像の読み込み、リピートせず、左に配置、上部に配置で幅100%で配置*/
+	background:	url('../images/nizi.jpg') no-repeat center top / 100%;	/*画像の読み込み、リピートせず、左に配置、上部に配置で幅100%で配置*/
 }
 
 /*container
