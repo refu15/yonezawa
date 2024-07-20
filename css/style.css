@@ -1,5 +1,5 @@
-@charset "utf-8";
 
+@charset "utf-8";
 
 /*Font Awesomeの読み込み
 ---------------------------------------------------------------------------*/
@@ -116,6 +116,97 @@ section + section {
 }
 
 
+/* カレンダーセクション */
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #e0f7fa; /* 薄い水色 */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-legend {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.icon-legend ul {
+    list-style: none;
+    padding: 0;
+}
+
+.icon-legend li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.event1-icon {
+    background-color: #ff9999; /* 赤 */
+}
+
+.event2-icon {
+    background-color: #99ff99; /* 緑 */
+}
+
+.event3-icon {
+    background-color: #9999ff; /* 青 */
+}
+
+/* イベントリストセクション */
+#event-list-section {
+    background: url('../images/event-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+}
+
+#event-list-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.event-item {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8); /* 背景を半透明に */
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.event-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.event-item p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.event-item a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #00796b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
 a {
@@ -156,93 +247,104 @@ a:hover {
 }
 
 
-/*ヘッダー
----------------------------------------------------------------------------*/
-/*h1テキスト。このテンプレートでは、画面最上部の帯の左側に小文字で入れているテキストです。*/
+/* ヘッダー */
+/* h1テキスト。このテンプレートでは、画面最上部の帯の左側に小文字で入れているテキストです。 */
 header h1 {
-	font-weight: normal;
-	margin: 0;padding: 0;
-	font-size: 0.8rem;		/*文字サイズを80%*/
-	letter-spacing: 0.1em;	/*文字間隔を少しだけ広く*/
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem; /* 文字サイズを80% */
+    letter-spacing: 0.1em; /* 文字間隔を少しだけ広く */
 }
 
-	/*画面幅700px以下の追加指定*/
-	@media screen and (max-width:700px) {
+/* 画面幅700px以下の追加指定 */
+@media screen and (max-width:700px) {
+    header h1 {
+        display: none; /* 表示しない */
+    }
+	.event-item {
+        width: 100%;
+    }
+}
 
-	header h1 {
-		display: none;	/*表示しない*/
-	}
-
-	}/*追加指定ここまで*/
-
-
-/*ヘッダー内のheader-inner（ロゴ画像とメニューブロックを囲むボックス）
----------------------------------------------------------------------------*/
-/*ボックスの設定*/
+/* ヘッダー内のheader-inner（ロゴ画像とメニューブロックを囲むボックス） */
+/* ボックスの設定 */
 .header-inner {
-	position: relative;
-	display: flex;			/*直接の子要素を横並びにする。この場合、ロゴとメニューブロックが対象。*/
-	align-items: center;	/*天地中央に配置*/
-	background: #fff;		/*背景色*/
+    position: relative;
+    display: flex; /* 直接の子要素を横並びにする。この場合、ロゴとメニューブロックが対象。 */
+    align-items: center; /* 天地中央に配置 */
+    background: #fff; /* 背景色 */
+	justify-content: center; /* 子要素を左右に配置 */
 }
 
-/*トップページでのボックス*/
+/* トップページでのボックス */
 .home .header-inner {
-	display: block;	/*flexを解除する*/
+    display: flex; /* flexを解除しない */
+	justify-content: center; /* 子要素を左右に配置 */
 }
 
+/* ヘッダー内のロゴ */
+/* ロゴ画像 */
+#logo img {
+    display: block;
+    width: 100px; /* ロゴ画像の幅 */
+    height: auto; /* 高さは自動調整 */
+}
 
-/*ヘッダー内のロゴ
----------------------------------------------------------------------------*/
-/*ロゴ画像*/
-#logo img {display: block;}
 #logo {
-	margin: 0;padding: 0;
-	width: 200px;	/*ロゴ画像の幅*/
+    margin: 0;
+    padding: 0;
+    width: 100px; /* ロゴ画像の幅 */
 }
 
-/*トップページのロゴ画像*/
-.home #logo {
-	width: 300px;	/*ロゴ画像の幅*/
-	position: absolute;z-index: 1;
-	left: 50%;
-	top: 0px;
-	transform: translateX(-50%);
-}
-
-	/*画面幅900px以下の追加指定*/
-	@media screen and (max-width:900px) {
-	
-	/*ロゴサイズの上書き*/
-	.home #logo {
-		min-width: 120px;	/*最小幅を設定しておきます。これ以上は小さくなりません。*/
-		width: 20vw;		/*幅。画面幅100%＝100vwです。*/
-	}
-	
-	}/*追加指定ここまで*/
-
-
-/*header-top（headerの最上部の帯ブロック）
----------------------------------------------------------------------------*/
-/*ブロック全体*/
+/* header-top（headerの最上部の帯ブロック） */
+/* ブロック全体 */
 #header-top {
-	padding: 5px var(--global-space);		/*上下、左右へのボックス内の余白。左右はcss冒頭で指定しているglobal-spaceを読み込みます*/
-	background: var(--primary-color);		/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
-	color: var(--primary-inverse-color);	/*文字色。css冒頭で指定しているprimary-inverse-colorを読み込みます*/
-	display: flex;		/*直接の子要素を横並びにする。この場合はh1テキストと、言語ボックスが対象。*/
-	justify-content: space-between;	/*それぞれ両サイドに配置*/
-	font-size: 0.8rem;	/*文字サイズを80%に*/
+    padding: 5px var(--global-space); /* 上下、左右へのボックス内の余白。左右はcss冒頭で指定しているglobal-spaceを読み込みます */
+    background: var(--primary-color); /* 背景色。css冒頭で指定しているprimary-colorを読み込みます */
+    color: var(--primary-inverse-color); /* 文字色。css冒頭で指定しているprimary-inverse-colorを読み込みます */
+    display: flex; /* 直接の子要素を横並びにする。この場合はh1テキストと、言語ボックスが対象。 */
+    justify-content: center; /* それぞれ両サイドに配置 */
+    align-items: center; /* 垂直方向中央に配置 */
+    font-size: 0.8rem; /* 文字サイズを80%に */
 }
 
-	/*画面幅700px以下の追加指定*/
-	@media screen and (max-width:700px) {
-
-	/*ブロック全体*/
-	#header-top {
-		justify-content: flex-end;	/*h1テキストが非表示になり、言語ボックスが左によるので、右側にとどまるように指定を変更*/
+/* 画面幅700px以下の追加指定 */
+@media screen and (max-width:700px) and (min-width:701px) {
+    /* ブロック全体 */
+    #header-top {
+        justify-content: flex-end; /* h1テキストが非表示になり、言語ボックスが左によるので、右側にとどまるように指定を変更 */
+    }
+}
+/* ロゴサイズの上書き */	
+#logo {	
+	width: 50px; /* スマホ用のロゴサイズ */	
 	}
 
-	}/*追加指定ここまで*/
+/* 画面幅900px以上の追加指定 */	
+@media screen and (min-width:901px) {	
+	/* ロゴサイズの上書き */	
+	#logo {	width: 20vw; /* 幅。画面幅100%＝100vwです。 */
+		 width: 150px; /* PC用のロゴサイズ */
+
+	}
+	.event-item {
+        width: 48%;
+    }
+}
+
+/* 画面幅900px以下の追加指定 */
+@media screen and (max-width:900px) {
+    /* ロゴサイズの上書き */
+    .home #logo {
+        min-width: 100px; /* 最小幅を設定しておきます。これ以上は小さくなりません。 */
+        width: 20vw; /* 幅。画面幅100%＝100vwです。 */
+    }
+	.event-item {
+        width: 48%;
+    }
+}
+
 
 /*リンクテキスト*/
 #header-top a {
