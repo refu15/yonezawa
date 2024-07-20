@@ -1111,8 +1111,10 @@ ul.icons {
 #description-section {
     max-width: 900px;
     margin: 20px auto;
-    padding: 10px;
-    background-color: #f0f0f0;
+    padding: 20px;
+    background-image: url('images/iro.jpg'); /* ここで背景画像を設定 */
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
