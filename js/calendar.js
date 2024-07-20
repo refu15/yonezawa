@@ -7,31 +7,31 @@ document.addEventListener('DOMContentLoaded', function() {
         events: [
             {
                 title: 'ナセBA',
-                start: '2024-06-20',
+                start: '2024-07-20',
                 url: 'event1.html',
                 backgroundColor: 'orange'
             },
             {
                 title: 'コミセン',
-                start: '2024-06-21',
+                start: '2024-07-21',
                 url: 'event2.html',
                 backgroundColor: 'red'
             },
             {
                 title: '市内中央',
-                start: '2024-06-22',
+                start: '2024-07-22',
                 url: 'event3.html',
                 backgroundColor: 'green'
             },
             {
                 title: '上杉神社周辺',
-                start: '2024-06-23',
+                start: '2024-07-23',
                 url: 'event4.html',
                 backgroundColor: 'blue'
             },
             {
                 title: '小野川温泉周辺',
-                start: '2024-06-24',
+                start: '2024-07-24',
                 url: 'event5.html',
                 backgroundColor: 'purple'
             }
